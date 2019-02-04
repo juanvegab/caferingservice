@@ -1,0 +1,9 @@
+<div class="background-holder" [ngStyle]="backgroundStyles">
+  <div class="section-wrapper"
+    [ngStyle]="textWrapperStyles">
+    <h1 *ngIf="title" class="title" [class.large-title]="largeTitle">{{ title }}</h1>
+    <h2 *ngIf="subTitle" class="subTitle">{{ subTitle }}</h2>
+    <p *ngIf="description" class="description">{{ description }}</p>
+    <a *ngIf="buttonLeyend && buttonRoute" class="btn btn-primary" [routerLink]="[buttonRoute]">{{ buttonLeyend }}</a>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+@import 'variables';
+
+cfs-site-navbar {
+    a {
+        color: $font-color-primary;
+        font-size: 18px;
+        margin-right: 10px;
+        position: relative;
+        text-decoration: none;
+
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+        }
+
+        &::before {
+            background-color: $font-color-primary;
+            bottom: 2px;
+            content: '';
+            display: block;
+            height: 2px;
+            left: 0;
+            position: absolute;
+            transition: width .3s ease;
+            width: 0;
+        }
+    }
+}
