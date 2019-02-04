@@ -1,0 +1,19 @@
+@import 'variables';
+
+cfs-social-media-navbar {
+    display: flex;
+
+    nav {
+        margin-left: auto;
+    }
+
+    a {
+        font-size: 30px;
+        color: $font-color-primary;
+        transition: color ease 0.4s;
+
+        &:hover {
+            color: $font-color-secondary;
+        }
+    }
+}
